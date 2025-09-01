@@ -1,0 +1,37 @@
+{
+  "name": "movie_review",
+  "version": "1.0.0",
+  "description": "Premium Movie Review Platform with trailers, ratings, and detailed information",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "movie",
+    "review",
+    "react",
+    "nodejs",
+    "mongodb",
+    "premium",
+    "trailers",
+    "ratings"
+  ],
+  "author": "Dhoom Kumar",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/movie_review.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/movie_review/issues"
+  },
+  "homepage": "https://github.com/yourusername/movie_review#readme"
+}
