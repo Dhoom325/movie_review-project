@@ -2,6 +2,12 @@
 
 A full-stack movie review platform featuring premium movies with trailers, ratings, and detailed information. Built with React, Node.js, and MongoDB.
 
+## 🌐 Live Demo
+
+**🎬 [View Live Application](https://deft-pixie-3602c0.netlify.app/)**
+
+> Experience the premium movie platform with 5 featured movies, trailers, and interactive features!
+
 ## ✨ Features
 
 - **Premium Movie Collection**: Curated collection of 5 top-rated movies
@@ -128,10 +134,22 @@ PORT=3001
 
 ## 🚀 Deployment
 
+### Live Application
+- **Production URL**: [https://deft-pixie-3602c0.netlify.app/](https://deft-pixie-3602c0.netlify.app/)
+- **Hosting**: Netlify (Auto-deployed from main branch)
+- **Status**: ✅ Live and Functional
+
+### Deployment Platforms
 The application can be deployed to platforms like:
 - **Frontend**: Netlify, Vercel, GitHub Pages
 - **Backend**: Heroku, DigitalOcean, AWS
 - **Database**: MongoDB Atlas
+
+### Current Deployment Setup
+- **Frontend**: Deployed on Netlify with automatic builds
+- **Build Command**: `npm run build`
+- **Build Directory**: `build`
+- **Node Version**: 18
 
 ## 🤝 Contributing
 
