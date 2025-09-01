@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { movieService } from '../services/movieService';
@@ -13,11 +13,7 @@ const MovieDetailPage = () => {
   const [isInWatchlist, setIsInWatchlist] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetchMovieDetails();
-  }, [id]);
-
-  const fetchMovieDetails = async () => {
+  const fetchMovieDetails = useCallback(async () => {
     try {
       setLoading(true);
       const movieData = await movieService.getMovieById(id);
@@ -54,7 +50,11 @@ const MovieDetailPage = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [id]);
+
+  useEffect(() => {
+    fetchMovieDetails();
+  }, [fetchMovieDetails]);
 
   const handleSubmitReview = (e) => {
     e.preventDefault();

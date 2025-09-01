@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
 import MovieCard from '../components/MovieCard';
@@ -11,14 +11,7 @@ const ProfilePage = () => {
   const [activeTab, setActiveTab] = useState('reviews');
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    if (user && token) {
-      fetchUserData();
-      fetchWatchlist();
-    }
-  }, [user, token]);
-
-  const fetchUserData = async () => {
+  const fetchUserData = useCallback(async () => {
     try {
       const response = await axios.get(
         `http://localhost:5000/users/${user.id}`,
@@ -30,9 +23,9 @@ const ProfilePage = () => {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [user, token]);
 
-  const fetchWatchlist = async () => {
+  const fetchWatchlist = useCallback(async () => {
     try {
       const response = await axios.get(
         `http://localhost:5000/users/${user.id}/watchlist`,
@@ -42,7 +35,14 @@ const ProfilePage = () => {
     } catch (error) {
       console.error('Error fetching watchlist:', error);
     }
-  };
+  }, [user, token]);
+
+  useEffect(() => {
+    if (user && token) {
+      fetchUserData();
+      fetchWatchlist();
+    }
+  }, [user, token, fetchUserData, fetchWatchlist]);
 
   if (isLoading) {
     return <div className="loading">Loading profile...</div>;
