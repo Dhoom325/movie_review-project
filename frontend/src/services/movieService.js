@@ -13,6 +13,7 @@ const omdbApi = axios.create({
 });
 
 // Premium static movie data - fallback when API is not available
+// eslint-disable-next-line no-unused-vars
 const PREMIUM_MOVIES = [
   {
     id: 'tt0468569',
