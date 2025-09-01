@@ -49,8 +49,8 @@ A full-stack movie review platform featuring premium movies with trailers, ratin
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/movie_review.git
-   cd movie_review
+   git clone https://github.com/Dhoom325/movie_review-project.git
+   cd movie_review-project
    ```
 
 2. **Backend Setup**
@@ -148,7 +148,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Dhoom Kumar**
-- GitHub: [@dhoomkumar](https://github.com/dhoomkumar)
+- GitHub: [@Dhoom325](https://github.com/Dhoom325)
 
 ## 🙏 Acknowledgments
 
