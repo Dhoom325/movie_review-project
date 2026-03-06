@@ -1,4 +1,4 @@
-# Premium Movie Review Platform
+# Movie Review Platform
 
 A full-stack movie review platform featuring premium movies with trailers, ratings, and detailed information. Built with React, Node.js, and MongoDB.
 
