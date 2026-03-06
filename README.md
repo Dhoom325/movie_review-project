@@ -1,14 +1,14 @@
-# 🎬 Premium Movie Review Platform
+# Premium Movie Review Platform
 
 A full-stack movie review platform featuring premium movies with trailers, ratings, and detailed information. Built with React, Node.js, and MongoDB.
 
-## 🌐 Live Demo
+##Live Demo
 
-**🎬 [View Live Application](https://deft-pixie-3602c0.netlify.app/)**
+**[View Live Application](https://deft-pixie-3602c0.netlify.app/)**
 
 > Experience the premium movie platform with 5 featured movies, trailers, and interactive features!
 
-## ✨ Features
+##Features
 
 - **Premium Movie Collection**: Curated collection of 5 top-rated movies
 - **Movie Trailers**: Embedded YouTube trailers for each movie
@@ -18,14 +18,6 @@ A full-stack movie review platform featuring premium movies with trailers, ratin
 - **User Authentication**: JWT-based authentication system
 - **Movie Details**: Comprehensive movie information including cast, director, runtime
 - **Premium UI**: Modern design with enhanced visual effects
-
-## 🎥 Featured Movies
-
-1. **The Dark Knight** (2008) - 9.0/10 ⭐
-2. **Inception** (2010) - 8.8/10 ⭐
-3. **The Matrix** (1999) - 8.7/10 ⭐
-4. **Interstellar** (2014) - 8.7/10 ⭐
-5. **The Shawshank Redemption** (1994) - 9.3/10 ⭐
 
 ## 🚀 Tech Stack
 
@@ -44,30 +36,12 @@ A full-stack movie review platform featuring premium movies with trailers, ratin
 - **Bcrypt** - Password hashing
 - **CORS** - Cross-origin resource sharing
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Node.js (v14 or higher)
 - MongoDB
 - npm or yarn
-
-### Setup Instructions
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Dhoom325/movie_review-project.git
-   cd movie_review-project
-   ```
-
-2. **Backend Setup**
-   ```bash
-   cd backend
-   npm install
-   cp .env.example .env
-   # Edit .env with your MongoDB connection string and JWT secret
-   npm run seed  # Seed the database
-   npm run dev   # Start backend on port 3001
-   ```
 
 3. **Frontend Setup**
    ```bash
@@ -86,7 +60,7 @@ JWT_SECRET=your_jwt_secret_here
 PORT=3001
 ```
 
-## 📱 Usage
+##Usage
 
 1. **Homepage**: Browse the premium movie collection
 2. **Search**: Use the search bar to find specific movies
@@ -98,7 +72,7 @@ PORT=3001
    - Plot summary
 4. **Authentication**: Register/login to access personalized features
 
-## 🎨 UI Features
+##UI Features
 
 - **Glass-morphism Design**: Modern transparent effects
 - **Responsive Layout**: Works on all device sizes
@@ -106,19 +80,7 @@ PORT=3001
 - **Loading States**: Smooth loading animations
 - **Error Handling**: User-friendly error messages
 
-## 🔗 API Endpoints
-
-### Movies
-- `GET /api/movies` - Get all movies
-- `GET /api/movies/:id` - Get movie by ID
-- `GET /api/movies/search/:query` - Search movies
-
-### Authentication
-- `POST /api/auth/register` - Register user
-- `POST /api/auth/login` - Login user
-- `GET /api/auth/profile` - Get user profile
-
-## 🌟 Key Components
+## Key Components
 
 ### Frontend
 - `HomePage.js` - Main landing page with movie grid
@@ -132,48 +94,16 @@ PORT=3001
 - `authRoutes.js` - Authentication routes
 - `Movie.js` - MongoDB movie model
 
-## 🚀 Deployment
+## Deployment
 
 ### Live Application
 - **Production URL**: [https://deft-pixie-3602c0.netlify.app/](https://deft-pixie-3602c0.netlify.app/)
 - **Hosting**: Netlify (Auto-deployed from main branch)
-- **Status**: ✅ Live and Functional
+- **Status**: Live and Functional
 
-### Deployment Platforms
-The application can be deployed to platforms like:
-- **Frontend**: Netlify, Vercel, GitHub Pages
-- **Backend**: Heroku, DigitalOcean, AWS
-- **Database**: MongoDB Atlas
 
-### Current Deployment Setup
-- **Frontend**: Deployed on Netlify with automatic builds
-- **Build Command**: `npm run build`
-- **Build Directory**: `build`
-- **Node Version**: 18
+## Acknowledgments
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Dhoom Kumar**
-- GitHub: [@Dhoom325](https://github.com/Dhoom325)
-
-## 🙏 Acknowledgments
-
-- Movie data and images from OMDb API
+- Movie data and images from IMDb API
 - Trailer videos from YouTube
 - Rating data from IMDb and Rotten Tomatoes
-
----
-
-⭐ **Star this repository if you found it helpful!** ⭐
