@@ -2,13 +2,13 @@
 
 A full-stack movie review platform featuring premium movies with trailers, ratings, and detailed information. Built with React, Node.js, and MongoDB.
 
-##Live Demo
+## Live Demo
 
 **[View Live Application](https://deft-pixie-3602c0.netlify.app/)**
 
 > Experience the premium movie platform with 5 featured movies, trailers, and interactive features!
 
-##Features
+## Features
 
 - **Premium Movie Collection**: Curated collection of 5 top-rated movies
 - **Movie Trailers**: Embedded YouTube trailers for each movie
@@ -19,7 +19,7 @@ A full-stack movie review platform featuring premium movies with trailers, ratin
 - **Movie Details**: Comprehensive movie information including cast, director, runtime
 - **Premium UI**: Modern design with enhanced visual effects
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 ### Frontend
 - **React 18** - Modern React with hooks
@@ -36,31 +36,7 @@ A full-stack movie review platform featuring premium movies with trailers, ratin
 - **Bcrypt** - Password hashing
 - **CORS** - Cross-origin resource sharing
 
-## Installation
-
-### Prerequisites
-- Node.js (v14 or higher)
-- MongoDB
-- npm or yarn
-
-3. **Frontend Setup**
-   ```bash
-   cd frontend
-   npm install
-   npm start     # Start frontend on port 3000
-   ```
-
-## 🔧 Environment Variables
-
-Create a `.env` file in the backend directory:
-
-```env
-MONGODB_URI=mongodb://localhost:27017/movie_review
-JWT_SECRET=your_jwt_secret_here
-PORT=3001
-```
-
-##Usage
+## Usage
 
 1. **Homepage**: Browse the premium movie collection
 2. **Search**: Use the search bar to find specific movies
